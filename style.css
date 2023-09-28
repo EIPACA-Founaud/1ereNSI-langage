@@ -1,0 +1,182 @@
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #2D2D2D;
+  color: #000;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #FFFFFF ;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #FFFFFF;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F93505;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+.timeline2 ul li:nth-child(odd) div {
+  left: -445px;
+  background: #F95E05
+}
+
+.timeline2 ul li:nth-child(odd) div::before {
+  left: 400px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+  transform: rotate(180deg)
+}
+
+.timeline3 ul li div {
+  background: #FFD800;
+}
+
+
+.timeline4 ul li:nth-child(odd) div {
+  left: -445px;
+  background: #BBEC23;
+}
+
+.timeline4 ul li:nth-child(odd) div::before {
+  left: 400px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+  transform: rotate(180deg);
+}
+
+.timeline5 ul li div {
+  background: #98C119;
+}
+
+.timeline6 ul li:nth-child(odd) div {
+  left: -445px;
+  background: #17BE90
+}
+
+.timeline6 ul li:nth-child(odd) div::before {
+  left: 400px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+  transform: rotate(180deg); 
+}
+
+.timeline7 ul li div {
+  background: #1A93D8;
+}
+
+.timeline8 ul li:nth-child(odd) div {
+  left: -445px;
+  background: #3F3CFA;
+}
+
+.timeline8 ul li:nth-child(odd) div::before {
+  left: 400px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+  transform: rotate(180deg);
+}
+
+.timeline9 ul li div {
+  background: #8E2DD9;
+}
+
+.timeline10 ul li:nth-child(odd) div {
+  left: -445px;
+  background: #E435F9;
+}
+
+.timeline10 ul li:nth-child(odd) div::before {
+  left: 400px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+  transform: rotate(180deg);   
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
